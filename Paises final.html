@@ -1,0 +1,1797 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Información de Continentes</title>
+    <style>
+      body {
+        font-family: "Century Gothic", sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      header {
+        text-align: center;
+        padding: 20px;
+        color: white;
+        background-color: #5dade2;
+      }
+      section,
+      div {
+        width: 80%;
+        margin: 20px auto;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      .continent {
+        background-color: white;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .continent img {
+        width: 150px;
+        height: auto;
+        border-radius: 10px;
+      }
+      .country {
+        background-color: white;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .country img {
+        width: 100px;
+        height: auto;
+      }
+      .country-info {
+        flex-grow: 1;
+        margin-left: 20px;
+      }
+      .country-info h3 {
+        margin: 0 0 10px 0;
+      }
+      .leader-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      .currency-info {
+        text-align: right;
+      }
+      .dropdown {
+        display: none;
+        margin-top: 10px;
+        text-align: left;
+      }
+      .dropdown.active {
+        display: block;
+      }
+      .toggle {
+        cursor: pointer;
+        color: #5dade2;
+      }
+      a {
+        text-decoration: none;
+        color: #5dade2;
+      }
+    </style>
+    <script>
+      function toggleDropdown(id) {
+        const dropdown = document.getElementById(id);
+        dropdown.classList.toggle("active");
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Información de Continentes</h1>
+    </header>
+
+    <div class="container">
+      <!-- América -->
+      <div class="continent">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/2/21/Americas_satellite_map.jpg"
+          alt="América"
+        />
+        <span class="toggle" onclick="toggleDropdown('america-dropdown')">
+          América &#9662;
+        </span>
+        <div class="dropdown" id="america-dropdown">
+          <ul>
+            <li><a href="#norteamerica">Países de América del Norte</a></li>
+<!-- Menú de navegación para los países -->
+<nav>
+  <ul>
+    <li><a href="#chile">Chile</a></li>
+    <li><a href="#colombia">Colombia</a></li>
+    <li><a href="#ecuador">Ecuador</a></li>
+    <li><a href="#guyana">Guyana</a></li>
+    <li><a href="#paraguay">Paraguay</a></li>
+    <li><a href="#peru">Perú</a></li>
+    <li><a href="#surinam">Surinam</a></li>
+    <li><a href="#uruguay">Uruguay</a></li>
+  </ul>
+</nav>
+<section>
+  <li><a href="#suramerica">Países de América del Sur</a></li>
+<!-- Menú de navegación para los países -->
+<nav>
+  <ul>
+    <li><a href="#argentina">Argentina</a></li>
+    <li><a href="#bolivia">Bolivia</a></li>
+    <li><a href="#brasil">Brasil</a></li>
+    <li><a href="#chile">Chile</a></li>
+    <li><a href="#colombia">Colombia</a></li>
+    <li><a href="#ecuador">Ecuador</a></li>
+    <li><a href="#guyana">Guyana</a></li>
+    <li><a href="#paraguay">Paraguay</a></li>
+    <li><a href="#peru">Perú</a></li>
+    <li><a href="#surinam">Surinam</a></li>
+    <li><a href="#uruguay">Uruguay</a></li>
+  </ul>
+</nav>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Asia -->
+      <div class="continent">
+        <img
+          src="https://www.gifex.com/images/1000X0/2009-11-04-10820/Mapa_Satelital_de_Asia.jpg"
+          alt="Asia"
+        />
+        <span class="toggle" onclick="toggleDropdown('asia-dropdown')">
+          Asia &#9662;
+        </span>
+        <div class="dropdown" id="asia-dropdown">
+          <ul>
+            <li><a href="#asiapaises">Asia Occidental</a></li>
+            <nav>
+  <ul>
+    <li><a href="#arabia-saudita">Arabia Saudita</a></li>
+    <li><a href="#emiratos-arabes-unidos">Emiratos Árabes Unidos</a></li>
+    <li><a href="#israel">Israel</a></li>
+    <li><a href="#libano">Líbano</a></li>
+    <li><a href="#jordania">Jordania</a></li>
+    <li><a href="#irak">Irak</a></li>
+    <li><a href="#iran">Irán</a></li>
+    <li><a href="#kuwait">Kuwait</a></li>
+    <li><a href="#qatar">Catar</a></li>
+    <li><a href="#turquia">Turquía</a></li>
+    <li><a href="#oman">Omán</a></li>
+    <li><a href="#bahrain">Baréin</a></li>
+  </ul>
+</nav>
+            <li><a href="#asiacapitales">Asia Oriental</a></li>
+            <nav>
+  <ul>
+    <li><a href="#china">China</a></li>
+    <li><a href="#japon">Japón</a></li>
+    <li><a href="#corea-sur">Corea del Sur</a></li>
+    <li><a href="#corea-norte">Corea del Norte</a></li>
+    <li><a href="#mongolia">Mongolia</a></li>
+    <li><a href="#hong-kong">Hong Kong</a></li>
+    <li><a href="#taiwan">Taiwán</a></li>
+  </ul>
+</nav>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Europa -->
+      <div class="continent">
+        <img
+          src="https://www.mapas-del-mundo.net/mapas/europa/mapa-grande-satelite-detallado-de-europa.jpg"
+          alt="Europa"
+        />
+        <span class="toggle" onclick="toggleDropdown('europa-dropdown')">
+          Europa &#9662;
+        </span>
+        <div class="dropdown" id="europa-dropdown">
+          <ul>
+            <li><a href="#europaises">Europa Norte</a></li>
+            <nav>
+  <ul>
+    <li><a href="#dinamarca">Dinamarca</a></li>
+    <li><a href="#estonia">Estonia</a></li>
+    <li><a href="#finlandia">Finlandia</a></li>
+    <li><a href="#francia">Francia</a></li>
+    <li><a href="#alemania">Alemania</a></li>
+    <li><a href="#hungria">Hungría</a></li>
+    <li><a href="#islandia">Islandia</a></li>
+    <li><a href="#irlanda">Irlanda</a></li>
+    <li><a href="#kosovo">Kosovo</a></li>
+    <li><a href="#letonia">Letonia</a></li>
+    <li><a href="#liechtenstein">Liechtenstein</a></li>
+    <li><a href="#lituania">Lituania</a></li>
+    <li><a href="#luxemburgo">Luxemburgo</a></li>
+    <li><a href="#moldavia">Moldavia</a></li>
+    <li><a href="#monaco">Mónaco</a></li>
+    <li><a href="#montenegro">Montenegro</a></li>
+    <li><a href="#paises-bajos">Países Bajos</a></li>
+    <li><a href="#noruega">Noruega</a></li>
+    <li><a href="#polonia">Polonia</a></li>
+    <li><a href="#serbia">Serbia</a></li>
+    <li><a href="#eslovaquia">Eslovaquia</a></li>
+    <li><a href="#suecia">Suecia</a></li>
+    <li><a href="#suiza">Suiza</a></li>
+    <li><a href="#reino-unido">Reino Unido</a></li>
+  </ul>
+</nav>
+            <li><a href="#europacapitales">Europa Sur</a></li>
+            <nav>
+  <ul>
+    <li><a href="#austria">Austria</a></li>
+    <li><a href="#bielorrusia">Bielorrusia</a></li>
+    <li><a href="#belgica">Bélgica</a></li>
+    <li><a href="#bosnia">Bosnia y Herzegovina</a></li>
+    <li><a href="#bulgaria">Bulgaria</a></li>
+    <li><a href="#chequia">Chequia</a></li>
+    <li><a href="#albania">Albania</a></li>
+    <li><a href="#andorra">Andorra</a></li>
+    <li><a href="#croacia">Croacia</a></li>
+    <li><a href="#grecia">Grecia</a></li>
+    <li><a href="#hungria">Hungría</a></li>
+    <li><a href="#italia">Italia</a></li>
+    <li><a href="#malta">Malta</a></li>
+    <li><a href="#montenegro">Montenegro</a></li>
+    <li><a href="#macedonia">Macedonia del Norte</a></li>
+    <li><a href="#serbia">Serbia</a></li>
+    <li><a href="#eslovenia">Eslovenia</a></li>
+    <li><a href="#eslovaquia">Eslovaquia</a></li>
+  </ul>
+</nav>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <h1 id="norteamerica">Países de América del Norte</h1>
+    </header>
+
+    <div class="country">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1200px-Flag_of_Mexico.svg.png"
+        alt="Bandera de México"
+      />
+      <div class="country-info">
+        <h3>México</h3>
+        <p><strong>Líder:</strong> Claudia Sheinbaum Pardo (Presidenta)</p>
+        <p><strong>Moneda:</strong> Peso Mexicano (MXN)</p>
+      </div>
+      <div class="currency-info">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Claudia_Sheinbaum_%28cropped%2C_centered%29.jpg/220px-Claudia_Sheinbaum_%28cropped%2C_centered%29.jpg"
+          alt="Claudia Sheinbaum Pardo"
+          class="leader-img"
+        />
+        <p><strong>Importe en MXN:</strong> 1 MXN = 1 MXN</p>
+      </div>
+    </div>
+
+    <div class="country">
+      <img
+        src="https://th.bing.com/th/id/OIP.nakI8Oe-T5coCbVC8rIN0AHaE2?rs=1&pid=ImgDetMain"
+        alt="Bandera de Canadá"
+      />
+      <div class="country-info">
+        <h3>Canadá</h3>
+        <p><strong>Líder:</strong> Justin Trudeau (Primer Ministro)</p>
+        <p><strong>Moneda:</strong> Dólar Canadiense (CAD)</p>
+      </div>
+      <div class="currency-info">
+        <img
+          src="https://media.socastsrm.com/wordpress/wp-content/blogs.dir/1605/files/2020/03/Justin-Trudeau-3.jpg"
+          alt="Justin Trudeau"
+          class="leader-img"
+        />
+        <p><strong>Importe en MXN:</strong> 1 CAD = 18.90 MXN</p>
+      </div>
+    </div>
+
+    <div class="country">
+      <img
+        src="https://th.bing.com/th/id/OIP.5k3WNuXphz58RseLAG2n-wHaD9?rs=1&pid=ImgDetMain"
+        alt="Bandera de Estados Unidos"
+      />
+      <div class="country-info">
+        <h3>Estados Unidos</h3>
+        <p><strong>Líder:</strong> Joe Biden (Presidente)</p>
+        <p><strong>Moneda:</strong> Dólar Estadounidense (USD)</p>
+      </div>
+      <div class="currency-info">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Joe_Biden_presidential_portrait.jpg/220px-Joe_Biden_presidential_portrait.jpg"
+          alt="Joe Biden"
+          class="leader-img"
+        />
+        <p><strong>Importe en MXN:</strong> 1 USD = 17.50 MXN</p>
+      </div>
+    </div>
+
+    <header>
+      <h2 id="suramerica">Países de América del Sur</h2>
+    </header>
+
+    <section>
+  <h3>Información relevante</h3>
+  <p>
+    América del Sur es un continente situado en el hemisferio occidental.
+    Con una rica diversidad cultural y natural, alberga 12 países y varias
+    dependencias. A continuación, se presenta información sobre los países
+    de esta región, incluyendo sus líderes y monedas.
+  </p>
+</section>
+
+<section>
+  <div class="country" id="argentina">
+    <img
+      src="https://i.pinimg.com/564x/39/eb/db/39ebdb5112159ba5c00ab4f53893324e.jpg"
+      alt="Bandera de Argentina"
+    />
+    <div class="country-info">
+      <h3>Argentina</h3>
+      <p><strong>Líder:</strong> Javier Milei (Presidente)</p>
+      <p><strong>Moneda:</strong> Peso Argentino (ARS)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://imagenes.eleconomista.com.mx/files/image_1000_900/uploads/2023/12/10/66e4d1de0a617.jpeg"
+        alt="Javier Milei"
+        class="leader-img"
+      />
+      <p><strong>Importe en MXN:</strong> 0.18 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="bolivia">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Bolivia.svg"
+      alt="Bandera de Bolivia"
+    />
+    <div class="country-info">
+      <h3>Bolivia</h3>
+      <p><strong>Líder:</strong> Luis Arce (Presidente)</p>
+      <p><strong>Moneda:</strong> Boliviano (BOB)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Luis_Alberto_Arce_Catacora_%28Official_Portrait%2C_2020%29_Cropped_II.png/640px-Luis_Alberto_Arce_Catacora_%28Official_Portrait%2C_2020%29_Cropped_II.png"
+        class="leader-img"
+        alt="Luis Arce"
+      />
+      <p><strong>Importe en MXN:</strong> 0.14 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="brasil">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png"
+      alt="Bandera de Brasil"
+    />
+    <div class="country-info">
+      <h3>Brasil</h3>
+      <p><strong>Líder:</strong> Luiz Inácio Lula da Silva (Presidente)</p>
+      <p><strong>Moneda:</strong> Real brasileño (BRL)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/4/40/Foto_oficial_de_Luiz_In%C3%A1cio_Lula_da_Silva_%28estreita%29.jpg"
+        alt="Luiz Inácio Lula da Silva"
+        class="leader-img"
+      />
+      <p><strong>Importe en MXN:</strong> 0.22 MXN</p>
+    </div>
+  </div>
+</section>
+
+<section id="america-latina">
+  <h3>Países de América Latina</h3>
+
+  <div class="country" id="chile">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg"
+      alt="Bandera de Chile"
+    />
+    <div class="country-info">
+      <h3>Chile</h3>
+      <p><strong>Líder:</strong> Gabriel Boric (Presidente)</p>
+      <p><strong>Moneda:</strong> Peso chileno (CLP)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Retrato_Oficial_Presidente_Boric_Font.jpg"
+        class="leader-img"
+        alt="Gabriel Boric"
+      />
+      <p><strong>Importe en MXN:</strong> 0.13 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="colombia">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMkEykUxRE925pjOTXd6s7Dy3e0QS9lbnFhw&s"
+      alt="Bandera de Colombia"
+    />
+    <div class="country-info">
+      <h3>Colombia</h3>
+      <p><strong>Líder:</strong> Gustavo Petro (Presidente)</p>
+      <p><strong>Moneda:</strong> Peso colombiano (COP)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Presidente_Gustavo_Petro_Urrego.jpg"
+        class="leader-img"
+        alt="Gustavo Petro"
+      />
+      <p><strong>Importe en MXN:</strong> 0.16 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="ecuador">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/1200px-Flag_of_Ecuador.svg.png"
+      alt="Bandera de Ecuador"
+    />
+    <div class="country-info">
+      <h3>Ecuador</h3>
+      <p><strong>Líder:</strong> Daniel Noboa (Presidente)</p>
+      <p><strong>Moneda:</strong> Dólar estadounidense (USD)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Presidente_Daniel_Noboa3.jpg/220px-Presidente_Daniel_Noboa3.jpg"
+        class="leader-img"
+        alt="Daniel Noboa"
+      />
+      <p><strong>Importe en MXN:</strong> 18.12 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="guyana">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_Guyana.svg/800px-Flag_of_Guyana.svg.png"
+      alt="Bandera de Guyana"
+    />
+    <div class="country-info">
+      <h3>Guyana</h3>
+      <p><strong>Líder:</strong> Irfaan Ali (Presidente)</p>
+      <p><strong>Moneda:</strong> Dólar guyanés (GYD)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Irfaan_Ali_in_2020.jpg/1200px-Irfaan_Ali_in_2020.jpg"
+        class="leader-img"
+        alt="Irfaan Ali"
+      />
+      <p><strong>Importe en MXN:</strong> 18.12 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="paraguay">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg"
+      alt="Bandera de Paraguay"
+    />
+    <div class="country-info">
+      <h3>Paraguay</h3>
+      <p><strong>Líder:</strong> Santiago Peña (Presidente)</p>
+      <p><strong>Moneda:</strong> Guaraní paraguayo (PYG)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://www.presidencia.gov.py/application/files/7716/9256/4395/WhatsApp_Image_2023-08-15_at_16.35.05.jpeg"
+        class="leader-img"
+        alt="Santiago Peña"
+      />
+      <p><strong>Importe en MXN:</strong> 0.14 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="peru">
+    <img
+      src="https://i.pinimg.com/564x/54/68/11/5468115b619d2652393ec940ec025abd.jpg"
+      alt="Bandera de Perú"
+    />
+    <div class="country-info">
+      <h3>Perú</h3>
+      <p><strong>Líder:</strong> Dina Boluarte (Presidente)</p>
+      <p><strong>Moneda:</strong> Sol peruano (PEN)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://noticias.imer.mx/wp-content/uploads/2022/12/673bf2e9-c10b-4fed-b18c-3693c0fa7110-1.jpg"
+        class="leader-img"
+        alt="Dina Boluarte"
+      />
+      <p><strong>Importe en MXN:</strong> 0.17 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="surinam">
+    <img
+      src="https://i.pinimg.com/564x/c4/5a/01/c45a01f6ec57ccf38e8ef9ea04e5e024.jpg"
+      alt="Bandera de Surinam"
+    />
+    <div class="country-info">
+      <h3>Surinam</h3>
+      <p><strong>Líder:</strong> Chandrikapersad Santokhi (Presidente)</p>
+      <p><strong>Moneda:</strong> Dólar de Surinam (SRD)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://media.telemundonuevomexico.com/2024/01/efe_207383ee5d3c0fad01c37db64871cd6bfca9a431w.jpg?quality=85&strip=all&resize=850%2C478"
+        alt="Chandrikapersad Santokhi"
+      />
+      <p><strong>Importe en MXN:</strong> 0.15 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="uruguay">
+    <img
+      src="https://i.pinimg.com/564x/90/73/10/907310165245022abb043e93f0ea448d.jpg"
+      alt="Bandera de Uruguay"
+    />
+    <div class="country-info">
+      <h3>Uruguay</h3>
+      <p><strong>Líder:</strong> Luis Lacalle Pou (Presidente)</p>
+      <p><strong>Moneda:</strong> Peso uruguayo (UYU)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://i0.wp.com/lopezdoriga.com/wp-content/uploads/2020/03/banda-preseidncial-lacalle.jpeg?resize=1536%2C1023&ssl=1"
+        class="leader-img"
+        alt="Luis Lacalle Pou"
+      />
+      <p><strong>Importe en MXN:</strong> 0.16 MXN</p>
+    </div>
+  </div>
+</section>
+
+
+<header style="background-color: #860400">
+      <h1>Asia Oriental</h1>
+    </header>
+    <section>
+  <div class="country" id="china">
+    <img src="https://i.pinimg.com/564x/05/9f/43/059f43098f98c2975711d495db157928.jpg" alt="China">
+    <div class="country-info">
+      <h3>China</h3>
+      <p><strong>Presidente de la república popular:</strong> Xi Jinping</p>
+      <p><strong>Moneda:</strong> Yuan</p>
+    </div>
+    <div class="currency-info">
+      <img src="https://i.pinimg.com/564x/c8/b0/01/c8b001c38a53bc8631e27d63e1812553.jpg" class="leader-img" alt="Xi Jinping">
+      <p><strong>Importe en MXN:</strong> 2.75 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="japon">
+    <img src="https://i.pinimg.com/564x/75/73/0e/75730e4be8c5a150aebffb822aa434d0.jpg" alt="Japón">
+    <div class="country-info">
+      <h3>Japón</h3>
+      <p><strong>Primer ministro:</strong> Shigeru Ishiba</p>
+      <p><strong>Moneda:</strong> Yen</p>
+    </div>
+    <div class="currency-info">
+      <img src="https://cdn-3.expansion.mx/dims4/default/a78d3eb/2147483647/strip/true/crop/1024x682+0+0/resize/1200x799!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc2%2Fd8%2F4e9a617f4fea81100bb960030e3a%2Fshigeru-ishiba-primer-ministro-japon.jpg" class="leader-img" alt="Shigeru Ishiba">
+      <p><strong>Importe en MXN:</strong> 0.13 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="corea-sur">
+    <img src="https://i.pinimg.com/564x/00/15/c7/0015c7bb25e4c8e67e3bc452935cfa8b.jpg" alt="Corea del Sur">
+    <div class="country-info">
+      <h3>Corea del Sur</h3>
+      <p><strong>Presidente:</strong> Yoon Suk-yeol</p>
+      <p><strong>Moneda:</strong> Won</p>
+    </div>
+    <div class="currency-info">
+      <img src="https://i.pinimg.com/736x/bb/86/e8/bb86e849eeaa67e05f359b4b6fcfa804.jpg" class="leader-img" alt="Yoon Suk-yeol">
+      <p><strong>Importe en MXN:</strong> 0.014 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="corea-norte">
+    <img src="https://i.pinimg.com/564x/ba/c2/80/bac280c63ff119920ac0d75e4947bdcc.jpg" alt="Corea del Norte">
+    <div class="country-info">
+      <h3>Corea del Norte</h3>
+      <p><strong>Líder supremo:</strong> Kim Jong-un</p>
+      <p><strong>Moneda:</strong> Won norcoreano</p>
+    </div>
+    <div class="currency-info">
+      <img src="https://i.pinimg.com/736x/9e/a0/9b/9ea09b54a2eea0ff664b4f30a61dc4d1.jpg" class="leader-img" alt="Kim Jong-un">
+      <p><strong>Importe en MXN:</strong> 0.021 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="mongolia">
+    <img src="https://i.pinimg.com/564x/0c/0b/94/0c0b947af99f76e8b09e827f32cca675.jpg" alt="Mongolia">
+    <div class="country-info">
+      <h3>Mongolia</h3>
+      <p><strong>Presidente:</strong> Ukhnaagiin Khürelsükh</p>
+      <p><strong>Moneda:</strong> Tögrög</p>
+    </div>
+    <div class="currency-info">
+      <img src="https://www.radiohc.cu/articles/cropped/Amjc-9790639-ukhnaa-khurelsukh.jpg" class="leader-img" alt="Ukhnaagiin Khürelsükh">
+      <p><strong>Importe en MXN:</strong> 0.0072 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="hong-kong">
+    <img src="https://i.pinimg.com/564x/ca/03/49/ca03498fd3709ea0d4f51ba3a22ee569.jpg" alt="Hong Kong">
+    <div class="country-info">
+      <h3>Hong Kong</h3>
+      <p><strong>Jefe ejecutivo:</strong> John Lee Ka-chiu</p>
+      <p><strong>Moneda:</strong> Dólar de Hong Kong</p>
+    </div>
+    <div class="currency-info">
+      <img src="https://www.globaltimes.cn/Portals/0/attachment/2023/2023-06-07/45f02a8e-644e-4143-812a-884d376840c5.jpeg" class="leader-img" alt="John Lee Ka-chiu">
+      <p><strong>Importe en MXN:</strong> 2.48 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="taiwan">
+    <img src="https://i.pinimg.com/564x/36/92/40/36924064f74e84f0076040a1e5002e5e.jpg" alt="Taiwán">
+    <div class="country-info">
+      <h3>Taiwán</h3>
+      <p><strong>Presidente de la república:</strong> Lai Ching-te</p>
+      <p><strong>Moneda:</strong> Nuevo dólar taiwanés</p>
+    </div>
+    <div class="currency-info">
+      <img src="https://caribbeannewsglobal.com/wp-content/uploads/2024/01/Lai-_Ching-te.jpg" class="leader-img" alt="Lai Ching-te">
+      <p><strong>Importe en MXN:</strong> 0.59 MXN</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <header style="background-color: #860400">
+      <h1>Asia Occidental</h1>
+    </header>
+
+    <section>
+  <h2>Información relevante</h2>
+  <p>
+    Asia Occidental es una región geográfica que incluye varios países de
+    gran relevancia en términos políticos, económicos y culturales. Aquí
+    exploramos los líderes políticos, las monedas locales y las
+    equivalencias con el peso mexicano.
+  </p>
+</section>
+
+<section>
+  <h2>Países de Asia Occidental</h2>
+
+  <div class="country" id="arabia-saudita">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/135px-Flag_of_Saudi_Arabia.svg.png"
+      alt="Arabia Saudita"
+    />
+    <div class="country-info">
+      <h3>Arabia Saudita</h3>
+      <p><strong>Primer ministro:</strong> Mohammed bin Salman</p>
+      <p><strong>Moneda:</strong> Riyal saudí (SAR)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/The_Prime_Minister_arrives_in_Saudi_Arabia_%2853270521280%29_%28cropped%29.jpg/220px-The_Prime_Minister_arrives_in_Saudi_Arabia_%2853270521280%29_%28cropped%29.jpg"
+        class="leader-img"
+        alt="Mohammed bin Salman"
+      />
+      <p><strong>Importe en MXN:</strong> 5.17 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="emiratos-arabes-unidos">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/135px-Flag_of_the_United_Arab_Emirates.svg.png"
+      alt="Emiratos Árabes Unidos"
+    />
+    <div class="country-info">
+      <h3>Emiratos Árabes Unidos</h3>
+      <p><strong>Presidente:</strong> Mohammed bin Zayed Al Nahyan</p>
+      <p><strong>Moneda:</strong> Dírham (AED)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Mohamed_bin_Zayed_Al_Nahyan.jpg/220px-Mohamed_bin_Zayed_Al_Nahyan.jpg"
+        class="leader-img"
+        alt="Mohammed bin Zayed Al Nahyan"
+      />
+      <p><strong>Importe en MXN:</strong> 5.29 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="israel">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg"
+      alt="Israel"
+    />
+    <div class="country-info">
+      <h3>Israel</h3>
+      <p><strong>Primer Ministro:</strong> Benjamin Netanyahu</p>
+      <p><strong>Moneda:</strong> Nuevo séquel israelí (ILS)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Benjamin_Netanyahu%2C_February_2023.jpg/220px-Benjamin_Netanyahu%2C_February_2023.jpg"
+        class="leader-img"
+        alt="Benjamin Netanyahu"
+      />
+      <p><strong>Importe en MXN:</strong> 5.16 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="libano">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/5/59/Flag_of_Lebanon.svg"
+      alt="Líbano"
+    />
+    <div class="country-info">
+      <h3>Líbano</h3>
+      <p><strong>Presidente:</strong> Michel Aoun</p>
+      <p><strong>Moneda:</strong> Libra libanesa (LBP)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Michel_Aoun%2C_February_2020_%28cropped%29.jpg/220px-Michel_Aoun%2C_February_2020_%28cropped%29.jpg"
+        class="leader-img"
+        alt="Michel Aoun"
+      />
+      <p><strong>Importe en MXN:</strong> 0.00022 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="jordania">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg"
+      alt="Jordania"
+    />
+    <div class="country-info">
+      <h3>Jordania</h3>
+      <p><strong>Rey:</strong> Abdullah II</p>
+      <p><strong>Moneda:</strong> Dinar jordano (JOD)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/d/d9/King_Abdullah_II_%28cropped%29.jpg"
+        class="leader-img"
+        alt="Rey Abdullah II"
+      />
+      <p><strong>Importe en MXN:</strong> 25.42 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="irak">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Iraq.svg/1200px-Flag_of_Iraq.svg.png"
+      alt="Irak"
+    />
+    <div class="country-info">
+      <h3>Irak</h3>
+      <p><strong>Presidente:</strong> Abdul Latif Rashid</p>
+      <p><strong>Moneda:</strong> Dinar iraquí (IQD)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Abdul_Latif_Rashid_2023_%28cropped%29.jpg/220px-Abdul_Latif_Rashid_2023_%28cropped%29.jpg"
+        class="leader-img"
+        alt="Abdul Latif Rashid"
+      />
+      <p><strong>Importe en MXN:</strong> 0.013 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="iran">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Iran_%28official%29.svg/800px-Flag_of_Iran_%28official%29.svg.png"
+      alt="Irán"
+    />
+    <div class="country-info">
+      <h3>Irán</h3>
+      <p><strong>Presidente:</strong> Mohammad Mokhber</p>
+      <p><strong>Moneda:</strong> Rial iraní (IRR)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/MMokhber.png/220px-MMokhber.png"
+        class="leader-img"
+        alt="Mohammad Mokhber"
+      />
+      <p><strong>Importe en MXN:</strong> 0.00041 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="kuwait">
+    <img
+      src="https://i.pinimg.com/564x/fa/47/28/fa47286476c190ab6a914e1a0e09d957.jpg"
+      alt="Kuwait"
+    />
+    <div class="country-info">
+      <h3>Kuwait</h3>
+      <p><strong>Emir:</strong> Nawaf Al-Ahmad Al-Jaber Al-Sabah</p>
+      <p><strong>Moneda:</strong> Dinar kuwaití (KWD)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://almomento.mx/wp-content/uploads/2020/09/emir-de-kuwait-sabah-al-ahmad-al-sabah.jpg"
+        class="leader-img"
+        alt="Nawaf Al-Ahmad Al-Jaber Al-Sabah"
+      />
+      <p><strong>Importe en MXN:</strong> 55.65 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="qatar">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Qatar.svg/800px-Flag_of_Qatar.svg.png"
+      alt="Catar"
+    />
+    <div class="country-info">
+      <h3>Qatar</h3>
+      <p><strong>Emir:</strong> Tamim bin Hamad Al Thani</p>
+      <p><strong>Moneda:</strong> Rial catarí (QAR)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://misiones.cubaminrex.cu/sites/default/files/imagenes/editorqatar/articulos/emir_del_estado_de_catar_1.jpg"
+        class="leader-img"
+        alt="Tamim bin Hamad Al Thani"
+      />
+      <p><strong>Importe en MXN:</strong> 5.16 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="turquia">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/800px-Flag_of_Turkey.svg.png"
+      alt="Turquía"
+    />
+    <div class="country-info">
+      <h3>Turquía</h3>
+      <p><strong>Presidente:</strong> Recep Tayyip Erdoğan</p>
+      <p><strong>Moneda:</strong> Lira turca (TRY)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/7381/production/_129896592_87d94ca58b15d89252f4440f7e693def8d735acc.jpg.webp"
+        class="leader-img"
+        alt="Recep Tayyip Erdoğan"
+      />
+      <p><strong>Importe en MXN:</strong> 4.76 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="oman">
+    <img
+      src="https://i.pinimg.com/564x/19/f2/10/19f210740911b5d545d90220708351de.jpg"
+      alt="Omán"
+    />
+    <div class="country-info">
+      <h3>Omán</h3>
+      <p><strong>Sultán:</strong> Haitham bin Tariq</p>
+      <p><strong>Moneda:</strong> Rial omaní (OMR)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Haitham_bin_Tariq_Al_Said.jpg"
+        class="leader-img"
+        alt="Haitham bin Tariq"
+      />
+      <p><strong>Importe en MXN:</strong> 55.65 MXN</p>
+    </div>
+  </div>
+
+  <div class="country" id="bahrain">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Bahrain.svg/800px-Flag_of_Bahrain.svg.png"
+      alt="Baréin"
+    />
+    <div class="country-info">
+      <h3>Baréin</h3>
+      <p><strong>Rey:</strong> Hamad bin Isa Al Khalifa</p>
+      <p><strong>Moneda:</strong> Dinar bareiní (BHD)</p>
+    </div>
+    <div class="currency-info">
+      <img
+        src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2016/02/26/14565102917429.jpg"
+        class="leader-img"
+        alt="Hamad bin Isa Al Khalifa"
+      />
+      <p><strong>Importe en MXN:</strong> 60.12 MXN</p>
+    </div>
+  </div>
+</section>
+     
+    <header style="background-color: #460900">
+      <h1><center>EUROPA DEL NORTE</center></h1>
+    </header>
+    <section>
+      <div class="country" id="dinamarca">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Bahrain.svg/640px-Flag_of_Bahrain.svg.png"
+          alt="Dinamarca"
+        />
+        <div class="country-info">
+          <h3>Dinamarca</h3>
+          <p><strong>Líder:</strong> Mette Frederiksen (Primera Ministra).</p>
+          <p><strong>Moneda:</strong> Corona danesa (DKK)</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Danish_Prime_Minister_Frederiksen.jpg/800px-Danish_Prime_Minister_Frederiksen.jpg"
+            class="leader-img"
+            alt="Hamad bin Isa Al Khalifa"
+          />
+          <p><strong>Importe en MXN:</strong> 2.56 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="estonia">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flag_of_Estonia.svg/1200px-Flag_of_Estonia.svg.png"
+          alt="Estonia"
+        />
+        <div class="country-info">
+          <h3>Estonia</h3>
+          <p><strong>Líder:</strong> Kaja Kallas (Primera Ministra).</p>
+          <p><strong>Moneda:</strong> Euro (EUR)</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Alar_Karis_cropped.jpg/1200px-Alar_Karis_cropped.jpg"
+            class="leader-img"
+            alt="Kaja Kallas"
+          />
+          <p><strong>Importe en MXN:</strong> 18.65 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="finlandia">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Finland_%281918%E2%80%931920%29.svg/295px-Flag_of_Finland_%281918%E2%80%931920%29.svg.png"
+          alt="Finlandia"
+        />
+        <div class="country-info">
+          <h3>Finlandia</h3>
+          <p><strong>Líder:</strong> Petteri Orpo (Presidente).</p>
+          <p><strong>Moneda:</strong> Euro (EUR)</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/%D0%A1%D0%B0%D1%83%D0%BB%D0%B8_%D0%9D%D0%B8%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%91_%2852074997569%29.jpg/800px-%D0%A1%D0%B0%D1%83%D0%BB%D0%B8_%D0%9D%D0%B8%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%91_%2852074997569%29.jpg"
+            class="leader-img"
+            alt="Petteri Orpo (Presidente)."
+          />
+          <p><strong>Importe en MXN:</strong> 18.65 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="francia">
+        <img
+          src="https://media.istockphoto.com/id/166055079/es/vector/bandera-francesa-o-francia.jpg?s=612x612&w=0&k=20&c=oUp6d8-Jx7Lpw8j1pbQ3XOEsDXXIqqRWdLzWsRBE5kg="
+          alt="Francia"
+        />
+        <div class="country-info">
+          <h3>Francia</h3>
+          <p><strong>Líder:</strong> Emmanuel Macron (Presidente).</p>
+          <p><strong>Moneda:</strong> Euro (EUR)</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQne6Bh5wD4OdyNYlt5veFC8BwUooPKTjYYyQ&s"
+            class="leader-img"
+            alt="Petteri Orpo (Presidente)."
+          />
+          <p><strong>Importe en MXN:</strong> 18.65 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="alemania">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/220px-Flag_of_Germany.svg.png"
+          alt="Alemania"
+        />
+        <div class="country-info">
+          <h3>Alemania</h3>
+          <p><strong>Líder:</strong> Olaf Scholz (Canciller).</p>
+          <p><strong>Moneda:</strong> Euro (EUR)</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/German_Federal_President_Frank-Walter_Steinmeier_in_Helsinki_8.4.2022_%2851990863165%29.jpg/220px-German_Federal_President_Frank-Walter_Steinmeier_in_Helsinki_8.4.2022_%2851990863165%29.jpg"
+            class="leader-img"
+            alt="Olaf Scholz (Canciller)."
+          />
+          <p><strong>Importe en MXN:</strong> 18.65 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="hungria">
+        <img
+          src="https://www.ecured.cu/images/7/79/Bandera_hungria.jpg"
+          alt="Hungría"
+        />
+        <div class="country-info">
+          <h3>Hungría</h3>
+          <p><strong>Líder:</strong> Viktor Orbán (Primer Ministro).</p>
+          <p><strong>Moneda:</strong> Forinto húngaro (HUF).</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Viktor_Orb%C3%A1n_2023.jpg"
+            class="leader-img"
+            alt="Viktor Orbán."
+          />
+          <p><strong>Importe en MXN:</strong> 0.05 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="islandia">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Iceland.svg/1200px-Flag_of_Iceland.svg.png"
+          alt="Islandia"
+        />
+        <div class="country-info">
+          <h3>Islandia</h3>
+          <p><strong>Líder:</strong> Katrín Jakobsdóttir (Primera Ministra).</p>
+          <p><strong>Moneda:</strong> Corona islandesa (ISK).</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://phantom-elmundo.unidadeditorial.es/740efe424430246ba91d29e3de413b43/resize/414/f/jpg/assets/multimedia/imagenes/2018/01/02/15149139256735.jpg"
+            class="leader-img"
+            alt="Katrín Jakobsdóttir."
+          />
+          <p><strong>Importe en MXN:</strong> 0.13 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="irlanda">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/1200px-Flag_of_Ireland.svg.png"
+          alt="Irlanda"
+        />
+        <div class="country-info">
+          <h3>Irlanda</h3>
+          <p><strong>Líder:</strong> Leo Varadkar (Taoiseach, Primer Ministro).</p>
+          <p><strong>Moneda:</strong> Euro (EUR)</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/President_Higgins%27s_visit_FINIRISH_BATT_HQ%2C_Lebanon_%28cropped%29.jpg/640px-President_Higgins%27s_visit_FINIRISH_BATT_HQ%2C_Lebanon_%28cropped%29.jpg"
+            class="leader-img"
+            alt="Katrín Jakobsdóttir."
+          />
+          <p><strong>Importe en MXN:</strong> 18.65 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="kosovo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_Kosovo.svg/1200px-Flag_of_Kosovo.svg.png"
+          alt="Kosovo"
+        />
+        <div class="country-info">
+          <h3>Kosovo</h3>
+          <p><strong>Líder:</strong> Vjosa Osmani (Presidenta).</p>
+          <p><strong>Moneda:</strong> Euro (EUR)</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWO03zEfMT5Fq6Xhr5zIezhc7hzb0DU4R_3Q&s"
+            class="leader-img"
+            alt="Katrín Jakobsdóttir."
+          />
+          <p><strong>Importe en MXN:</strong> 18.65 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="letonia">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Latvia.svg/800px-Flag_of_Latvia.svg.png"
+          alt="Kosovo"
+        />
+        <div class="country-info">
+          <h3>Letonia</h3>
+          <p><strong>Líder:</strong> Vjosa Osmani (Presidenta).</p>
+          <p><strong>Moneda:</strong> Euro (EUR)</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/c/c1/12.Saeimas_deput%C4%81ts_Edgars_Rink%C4%93vi%C4%8Ds_%2815978318406%29.jpg"
+            class="leader-img"
+            alt="Katrín Jakobsdóttir."
+          />
+          <p><strong>Importe en MXN:</strong> 18.65 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="liechtenstein">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/4/47/Flag_of_Liechtenstein.svg"
+          alt="Kosovo"
+        />
+        <div class="country-info">
+          <h3>Liechtenstein</h3>
+          <p><strong>Líder:</strong> Alois von und zu Liechtenstein (Príncipe Regente).</p>
+          <p><strong>Moneda:</strong> Franco suizo (CHF)</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/%D0%94%D0%B0%D0%BD%D0%B8%D1%8D%D0%BB%D1%8C_%D0%A0%D0%B8%D1%88_%2809-11-2021%29.jpg/220px-%D0%94%D0%B0%D0%BD%D0%B8%D1%8D%D0%BB%D1%8C_%D0%A0%D0%B8%D1%88_%2809-11-2021%29.jpg"
+            class="leader-img"
+            alt="Katrín Jakobsdóttir."
+          />
+          <p><strong>Importe en MXN:</strong> 19.94 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="lituania">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Flag_of_Lithuania_%281918%E2%80%931940%29.svg/220px-Flag_of_Lithuania_%281918%E2%80%931940%29.svg.png"
+          alt="Kosovo"
+        />
+        <div class="country-info">
+          <h3>Lituania</h3>
+          <p><strong>Líder:</strong> Gitanas Nausėda (Presidente).</p>
+          <p><strong>Moneda:</strong> Euro (EUR)</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Gitanas_Nauseda_crop.png/800px-Gitanas_Nauseda_crop.png"
+            class="leader-img"
+            alt="Katrín Jakobsdóttir."
+          />
+          <p><strong>Importe en MXN:</strong> 18.65 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="luxemburgo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Flag_of_Luxembourg.svg/200px-Flag_of_Luxembourg.svg.png"
+          alt="Kosovo"
+        />
+        <div class="country-info">
+          <h3>Luxemburgo</h3>
+          <p><strong>Líder:</strong> Xavier Bettel (Presidente).</p>
+          <p><strong>Moneda:</strong> Euro (EUR)</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://i.pinimg.com/564x/37/b9/84/37b9845c74502fba3b73583c5896a170.jpg"
+            class="leader-img"
+            alt="Katrín Jakobsdóttir."
+          />
+          <p><strong>Importe en MXN:</strong> 18.65 MXN</p>
+        </div>
+      </div>
+       <div class="country" id="moldavia">
+       <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Moldova.svg/800px-Flag_of_Moldova.svg.png"
+          alt="Kosovo"
+        />
+        <div class="country-info">
+          <h3>Moldavia</h3>
+          <p><strong>Líder:</strong> Maia Sandu (Presidenta).</p>
+          <p><strong>Moneda:</strong> Leu moldavo (MDL).</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Maia_Sandu%2C_President_of_Moldova_in_2024_%28cropped%29.jpg"
+            class="leader-img"
+            alt="Katrín Jakobsdóttir."
+          />
+          <p><strong>Importe en MXN:</strong> 1.03 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="monaco">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Flag_of_Monaco.svg/800px-Flag_of_Monaco.svg.png"
+          alt="Kosovo"
+        />
+        <div class="country-info">
+          <h3>Mónaco</h3>
+          <p><strong>Líder:</strong> Alberto II (Príncipe).</p>
+          <p><strong>Moneda:</strong> Euro (EUR).</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Albert_II_February_2015_%28cropped%29.jpg"
+            class="leader-img"
+            alt="Katrín Jakobsdóttir."
+          />
+          <p><strong>Importe en MXN:</strong> 18.65 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="montenegro">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Montenegro.svg/800px-Flag_of_Montenegro.svg.png"
+          alt="Kosovo"
+        />
+        <div class="country-info">
+          <h3>Montenegro:</h3>
+          <p><strong>Líder:</strong> Jakov Milatović (Presidente).</p>
+          <p><strong>Moneda:</strong> Euro (EUR).</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Jakov_Milatovi%C4%87_2023.jpg"
+            class="leader-img"
+            alt="Katrín Jakobsdóttir."
+          />
+          <p><strong>Importe en MXN:</strong> 18.65 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="paises-bajos">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/800px-Flag_of_the_Netherlands.svg.png"
+          alt="Kosovo"
+        />
+        <div class="country-info">
+          <h3>Países Bajos</h3>
+          <p><strong>Líder:</strong> Mark Rutte (Primer Ministro).</p>
+          <p><strong>Moneda:</strong> Euro (EUR).</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Mark_Rutte%2C_23.03.23_%28cropped%29.jpg"
+            class="leader-img"
+            alt="Katrín Jakobsdóttir."
+          />
+          <p><strong>Importe en MXN:</strong> 18.65 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="noruega">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/234px-Flag_of_Norway.svg.png"
+          alt="Kosovo"
+        />
+        <div class="country-info">
+          <h3>Noruega</h3>
+          <p><strong>Líder:</strong> Jonas Gahr Støre (Primer Ministro).</p>
+          <p><strong>Moneda:</strong> Corona noruega (NOK).</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://i.pinimg.com/564x/37/b9/84/37b9845c74502fba3b73583c5896a170.jpg"
+            class="leader-img"
+            alt="Katrín Jakobsdóttir."
+          />
+          <p><strong>Importe en MXN:</strong> 1.65 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="polonia">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg"
+          alt="Kosovo"
+        />
+        <div class="country-info">
+          <h3>Polonia</h3>
+          <p><strong>Líder:</strong> Andrzej Duda (Presidente).</p>
+          <p><strong>Moneda:</strong> Zloty polaco (PLN).</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/b/bd/President_of_Poland_Andrzej_Duda_Full_Resolution_%28cropped%29.jpg"
+            class="leader-img"
+            alt="Katrín Jakobsdóttir."
+          />
+          <p><strong>Importe en MXN:</strong> 4.33 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="serbia">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Flag_of_Serbia.svg/800px-Flag_of_Serbia.svg.png"
+          alt="Kosovo"
+        />
+        <div class="country-info">
+          <h3>Serbia</h3>
+          <p><strong>Líder:</strong> Aleksandar Vučić (Presidente).</p>
+          <p><strong>Moneda:</strong> Dinar serbio (RSD).</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/7/79/Aleksandar_Vu%C4%8Di%C4%87_in_2023_%28cropped%29.png"
+            class="leader-img"
+            alt="Katrín Jakobsdóttir."
+          />
+          <p><strong>Importe en MXN:</strong> 0.17 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="eslovaquia">
+        <img
+          src="https://www.banderas-e-himnos.com/media/827/bandera-eslovaquia.png"
+          alt="Kosovo"
+        />
+        <div class="country-info">
+          <h3>Eslovaquia</h3>
+          <p><strong>Líder:</strong> Zuzana Čaputová (Presidenta).</p>
+          <p><strong>Moneda:</strong> Euro (EUR).</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Peter_Pellegrini%2C_2024.jpg/220px-Peter_Pellegrini%2C_2024.jpg"
+            class="leader-img"
+            alt="Katrín Jakobsdóttir."
+          />
+          <p><strong>Importe en MXN:</strong> 18.65 MXN</p>
+        </div>
+      </div>
+      <div class="country">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Sweden.svg/800px-Flag_of_Sweden.svg.png"
+          alt="Kosovo"
+        />
+        <div class="country-info">
+          <h3>Suecia</h3>
+          <p><strong>Líder:</strong> Ulf Kristersson (Primer Ministro).</p>
+          <p><strong>Moneda:</strong> Corona sueca (SEK).</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Stefan_L%C3%B6fven_%2801-06-2021%29_%28cropped%29.jpg/800px-Stefan_L%C3%B6fven_%2801-06-2021%29_%28cropped%29.jpg"
+            class="leader-img"
+            alt="Katrín Jakobsdóttir."
+          />
+          <p><strong>Importe en MXN:</strong> 1.72 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="suiza">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/640px-Flag_of_Switzerland.svg.png"
+          alt="Kosovo"
+        />
+        <div class="country-info">
+          <h3>Suiza</h3>
+          <p><strong>Líder:</strong> Alain Berset (Presidente).</p>
+          <p><strong>Moneda:</strong> Franco suizo (CHF).</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Alain_Berset_%282023%29.jpg/1200px-Alain_Berset_%282023%29.jpg"
+            class="leader-img"
+            alt="Katrín Jakobsdóttir."
+          />
+          <p><strong>Importe en MXN:</strong> 19.94 MXN</p>
+        </div>
+      </div>
+      <div class="country" id="reino-unido">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg"
+          alt="Kosovo"
+        />
+        <div class="country-info">
+          <h3>Reino Unido</h3>
+          <p><strong>Líder:</strong>Rishi Sunak (Primer Ministro).</p>
+          <p><strong>Moneda:</strong> Libra esterlina (GBP).</p>
+        </div>
+        <div class="currency-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Official_portrait_of_Rishi_Sunak_crop_2.jpg/220px-Official_portrait_of_Rishi_Sunak_crop_2.jpg"
+            class="leader-img"
+            alt="Katrín Jakobsdóttir."
+          />
+          <p><strong>Importe en MXN:</strong> 23.77 MXN</p>
+        </div>
+      </div>
+      
+    </section>
+
+
+
+    <header style="background-color: #460900">
+      <h1><center>EUROPA DEL SUR</center></h1>
+    </header>
+
+    <div class="country" id="austria">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/2020_Karl_Nehammer_Ministerrat_am_8.1.2020_%2849351366976%29_%28cropped%29.jpg/1200px-2020_Karl_Nehammer_Ministerrat_am_8.1.2020_%2849351366976%29_%28cropped%29.jpg"
+        alt="Karl Nehammer"
+      />
+      <div class="info">
+        <h2>Austria</h2>
+        <p><strong>Líder:</strong> Karl Nehammer (Canciller)</p>
+        <p><strong>Moneda:</strong> Euro (EUR)</p>
+        <p class="currency">1 EUR ≈ 19.20 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> Austria es famosa por ser la
+          cuna de grandes compositores como Mozart y Beethoven.
+        </p>
+      </div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/640px-Flag_of_Austria.svg.png"
+        alt="Bandera de Austria"
+      />
+    </div>
+
+    <section class="country" id="bielorrusia">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Alexander_Lukashenko_%282024-05-24%29_%28cropped%29_3.jpg"
+        alt="Alexander Lukashenko"
+      />
+      <div class="info">
+        <h2>Bielorrusia (Belarús)</h2>
+        <p><strong>Líder:</strong> Alexander Lukashenko (Presidente)</p>
+        <p><strong>Moneda:</strong> Rublo bielorruso (BYN)</p>
+        <p class="currency">1 BYN ≈ 6.70 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> Bielorrusia es conocida por
+          sus vastos bosques y su biodiversidad.
+        </p>
+      </div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Flag_of_Belarus.svg/800px-Flag_of_Belarus.svg.png"
+        alt="Bandera de Bielorrusia"
+      />
+    </section>
+
+    <section class="country" id="belgica">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9OzextiU69149YuKvpdUD2MNO6SiQCo_FaA&s"
+        alt="Alexander De Croo"
+      />
+      <div class="info">
+        <h2>Bélgica</h2>
+        <p><strong>Líder:</strong> Alexander De Croo (Primer Ministro)</p>
+        <p><strong>Moneda:</strong> Euro (EUR)</p>
+        <p class="currency">1 EUR ≈ 19.20 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> Bruselas, la capital de
+          Bélgica, es la sede principal de la Unión Europea.
+        </p>
+      </div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1200px-Flag_of_Belgium.svg.png"
+        alt="Bandera de Bélgica"
+      />
+    </section>
+
+    <section class="country" id="bosnia">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOV20G2aw6yitm4jxWQeLbm1Ye8zYnIf8xqA&s"
+        alt="Denis Bećirović"
+      />
+      <div class="info">
+        <h2>Bosnia y Herzegovina</h2>
+        <p>
+          <strong>Líder:</strong> Denis Bećirović (Miembro de la Presidencia)
+        </p>
+        <p><strong>Moneda:</strong> Marco convertible (BAM)</p>
+        <p class="currency">1 BAM ≈ 9.90 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> Bosnia y Herzegovina tiene un
+          sistema político único con una presidencia tripartita.
+        </p>
+      </div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bosnia_and_Herzegovina.svg"
+        alt="Bandera de Bosnia y Herzegovina"
+      />
+    </section>
+
+    <section class="country" id="bulgaria">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/5/51/Rumen_Radev_official_portrait.jpg"
+        alt="Rumen Radev"
+      />
+      <div class="info">
+        <h2>Bulgaria</h2>
+        <p><strong>Líder:</strong> Rumen Radev (Presidente)</p>
+        <p><strong>Moneda:</strong> Lev búlgaro (BGN)</p>
+        <p class="currency">1 BGN ≈ 10.50 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> Bulgaria es uno de los países
+          más antiguos de Europa, con una historia que se remonta al siglo VII.
+        </p>
+      </div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg"
+        alt="Bandera de Bulgaria"
+      />
+    </section>
+
+    <section class="country" id="chequia">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Petr_Pavel.jpg/800px-Petr_Pavel.jpg"
+        alt="Petr Pavel"
+      />
+      <div class="info">
+        <h2>Chequia (República Checa)</h2>
+        <p><strong>Líder:</strong> Petr Pavel (Presidente)</p>
+        <p><strong>Moneda:</strong> Corona checa (CZK)</p>
+        <p class="currency">1 CZK ≈ 0.80 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> Praga, la capital, es famosa
+          por su arquitectura medieval y su reloj astronómico.
+        </p>
+      </div>
+      <img
+        src="https://es.flagsdb.com/img/flags/cz.svg"
+        alt="Bandera de Chequia"
+      />
+    </section>
+
+    <section class="country" id="albania">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/d/de/Edi_Rama_%282024-02-29%29.jpg"
+        alt="Edi Rama"
+      />
+      <div class="info">
+        <h2>Albania</h2>
+        <p><strong>Líder:</strong> Edi Rama (Primer Ministro)</p>
+        <p><strong>Moneda:</strong> Lek albanés (ALL)</p>
+        <p class="currency">1 ALL ≈ 0.18 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> Albania fue uno de los países
+          más aislados del mundo bajo el régimen comunista de Enver Hoxha.
+        </p>
+      </div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Albania.svg/640px-Flag_of_Albania.svg.png"
+        alt="Bandera de Albania"
+      />
+    </section>
+
+    <section class="country" id="andorra">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Xavier_Espot_Zamora_i_Isabel_Santos_a_l%27assemblea_de_l%27OSCE_2017_%28cropped%29.jpg/640px-Xavier_Espot_Zamora_i_Isabel_Santos_a_l%27assemblea_de_l%27OSCE_2017_%28cropped%29.jpg"
+        alt="Xavier Espot Zamora"
+      />
+      <div class="info">
+        <h2>Andorra</h2>
+        <p><strong>Líder:</strong> Xavier Espot Zamora (Jefe de Gobierno)</p>
+        <p><strong>Moneda:</strong> Euro (EUR)</p>
+        <p class="currency">1 EUR ≈ 19.20 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> Andorra es un pequeño
+          principado conocido por su turismo y tiendas libres de impuestos.
+        </p>
+      </div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Andorra.svg/640px-Flag_of_Andorra.svg.png"
+        alt="Bandera de Andorra"
+      />
+    </section>
+
+    <section class="country" id="croacia">
+      <img
+        src="https://i.pinimg.com/564x/f2/80/13/f28013f02a7a9f1bfff60302edbb4855.jpg"
+        alt="Zoran Milanović"
+      />
+      <div class="info">
+        <h2>Croacia</h2>
+        <p><strong>Líder:</strong> Zoran Milanović (Presidente)</p>
+        <p><strong>Moneda:</strong> Euro (EUR)</p>
+        <p class="currency">1 EUR ≈ 19.20 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> Croacia se unió a la Unión
+          Europea en 2013 y es famosa por su costa en el Adriático.
+        </p>
+      </div>
+      <img
+        src="https://i.pinimg.com/564x/07/85/e6/0785e662516a384072c5cec859f0380c.jpg"
+        alt="Bandera de Croacia"
+      />
+    </section>
+
+    <section class="country" id="grecia">
+      <img
+        src="https://i.pinimg.com/564x/7b/0c/d8/7b0cd899cd6cb320f4f0f9a597625a61.jpg"
+        alt="Kyriakos Mitsotakis"
+      />
+      <div class="info">
+        <h2>Grecia</h2>
+        <p><strong>Líder:</strong> Kyriakos Mitsotakis (Primer Ministro)</p>
+        <p><strong>Moneda:</strong> Euro (EUR)</p>
+        <p class="currency">1 EUR ≈ 19.20 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> Grecia es conocida como la
+          cuna de la civilización occidental y la democracia.
+        </p>
+      </div>
+      <img
+        src="https://i.pinimg.com/564x/b8/16/1b/b8161b02f9d798cd3c1c99eff4e2e434.jpg"
+        alt="Bandera de Grecia"
+      />
+    </section>
+
+    <section class="country" id="hungria">
+      <img
+        src="https://i.pinimg.com/564x/73/02/8c/73028c2eda9a36fd46becb3d13f5bc19.jpg"
+        alt="Katalin Novák"
+      />
+      <div class="info">
+        <h2>Hungría</h2>
+        <p><strong>Líder:</strong> Katalin Novák (Presidenta)</p>
+        <p><strong>Moneda:</strong> Florín húngaro (HUF)</p>
+        <p class="currency">1 HUF ≈ 0.44 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> Hungría es famosa por su
+          patrimonio cultural, incluyendo sus termas y su gastronomía.
+        </p>
+      </div>
+      <img
+        src="https://i.pinimg.com/564x/11/00/21/110021d0f0167e7306b9d559791ff53b.jpg"
+        alt="Bandera de Hungría"
+      />
+    </section>
+
+    <section class="country" id="italia">
+      <img
+        src="https://i.pinimg.com/736x/d0/5b/4a/d05b4a18b99c6048d6d77d94004d53f4.jpg"
+        alt="Giorgia Meloni"
+      />
+      <div class="info">
+        <h2>Italia</h2>
+        <p><strong>Líder:</strong> Giorgia Meloni (Primer Ministro)</p>
+        <p><strong>Moneda:</strong> Euro (EUR)</p>
+        <p class="currency">1 EUR ≈ 19.20 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> Italia es conocida por su rica
+          historia, su arte y su gastronomía.
+        </p>
+      </div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/640px-Flag_of_Italy.svg.png"
+        alt="Bandera de Italia"
+      />
+    </section>
+
+    <section class="country" id="malta">
+      <img
+        src="https://i.pinimg.com/564x/79/f8/a8/79f8a80634aadc794e31f6bac0462325.jpg"
+        alt="Robert Abela"
+      />
+      <div class="info">
+        <h2>Malta</h2>
+        <p><strong>Líder:</strong> Robert Abela (Primer Ministro)</p>
+        <p><strong>Moneda:</strong> Euro (EUR)</p>
+        <p class="currency">1 EUR ≈ 19.20 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> Malta es un pequeño
+          archipiélago en el Mediterráneo, famoso por su historia y paisajes.
+        </p>
+      </div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Malta.svg/640px-Flag_of_Malta.svg.png"
+        alt="Bandera de Malta"
+      />
+    </section>
+
+    <section class="country" id="montenegro">
+      <img
+        src="https://i.pinimg.com/736x/65/b2/5a/65b25af1f41952e7a2e4cfd72d5b0677.jpg"
+        alt="Jakov Milatović"
+      />
+      <div class="info">
+        <h2>Montenegro</h2>
+        <p><strong>Líder:</strong> Jakov Milatović (Presidente)</p>
+        <p><strong>Moneda:</strong> Euro (EUR)</p>
+        <p class="currency">1 EUR ≈ 19.20 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> Montenegro es conocido por sus
+          montañas y playas en la costa del Adriático.
+        </p>
+      </div>
+      <img
+        src="https://i.pinimg.com/564x/bd/1f/6f/bd1f6fed9075bb805b5000aaa874d7f8.jpg"
+        alt="Bandera de Montenegro"
+      />
+    </section>
+
+    <section class="country" id="macedonia">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/8/81/Obisk_predsednika_vlade_Severne_Makedonija_Dimitarja_Kova%C4%8Devskega_-_3._4._2023_%2852789983136%29_%28cropped%29.jpg"
+        alt="Dimitar Kovačevski"
+      />
+      <div class="info">
+        <h2>Macedonia del Norte</h2>
+        <p><strong>Líder:</strong> Dimitar Kovačevski (Primer Ministro)</p>
+        <p><strong>Moneda:</strong> Denar macedonio (MKD)</p>
+        <p class="currency">1 MKD ≈ 0.36 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> Macedonia del Norte tiene una
+          rica herencia cultural que incluye influencias griegas y otomanas.
+        </p>
+      </div>
+      <img
+        src="https://i.pinimg.com/564x/14/0e/ed/140eed07544888d753e92e7b88de210b.jpg"
+        alt="Bandera de Macedonia del Norte"
+      />
+    </section>
+
+    <section class="country" id="serbia">
+      <img
+        src="https://i.pinimg.com/736x/31/7f/23/317f230e5fab40e3b0964b9c2208e01b.jpg"
+        alt="Aleksandar Vučić"
+      />
+      <div class="info">
+        <h2>Serbia</h2>
+        <p><strong>Líder:</strong> Aleksandar Vučić (Presidente)</p>
+        <p><strong>Moneda:</strong> Dinar serbio (RSD)</p>
+        <p class="currency">1 RSD ≈ 0.35 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> Serbia es famosa por su música
+          folclórica y su rica historia cultural.
+        </p>
+      </div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Flag_of_Serbia.svg/640px-Flag_of_Serbia.svg.png"
+        alt="Bandera de Serbia"
+      />
+    </section>
+
+    <section class="country" id="eslovenia">
+      <img
+        src="https://i.pinimg.com/564x/d2/93/df/d293dfc1cb7e857e1000a691c06dbbcf.jpg"
+        alt="Nataša Pirc Musar"
+      />
+      <div class="info">
+        <h2>Eslovenia</h2>
+        <p><strong>Líder:</strong> Nataša Pirc Musar (Presidenta)</p>
+        <p><strong>Moneda:</strong> Euro (EUR)</p>
+        <p class="currency">1 EUR ≈ 19.20 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> Eslovenia es conocida por sus
+          paisajes naturales y su biodiversidad.
+        </p>
+      </div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Flag_of_Slovenia.svg/640px-Flag_of_Slovenia.svg.png"
+        alt="Bandera de Eslovenia"
+      />
+    </section>
+
+    <section class="country" id="eslovaquia">
+      <img
+        src="https://i.pinimg.com/736x/4d/90/a0/4d90a0c946bb0d57533b64650162ad9f.jpg"
+        alt="Robert Fico"
+      />
+      <div class="info">
+        <h2>Eslovaquia</h2>
+        <p><strong>Líder:</strong> Robert Fico (Primer Ministro)</p>
+        <p><strong>Moneda:</strong> Euro (EUR)</p>
+        <p class="currency">1 EUR ≈ 19.20 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> Eslovaquia es famosa por su
+          castillo de Bratislava y su rica historia medieval.
+        </p>
+      </div>
+      <img
+        src="https://i.pinimg.com/564x/77/45/74/7745744e13ec76bfabb8616b6febd162.jpg"
+        alt="Bandera de Eslovaquia"
+      />
+    </section>
+<section class="country" id="españa">
+      <img
+        src="https://i.pinimg.com/564x/55/df/de/55dfdee5258a40b86ad272ca12b84c96.jpg"
+        alt="Pedro Sánchez"
+      />
+      <div class="info">
+        <h2>España</h2>
+        <p><strong>Líder:</strong> Pedro Sánchez (Primer Ministro)</p>
+        <p><strong>Moneda:</strong> Euro (EUR)</p>
+        <p class="currency">1 EUR ≈ 19.20 MXN</p>
+        <p>
+          <strong>Información Relevante:</strong> España es famosa por su
+          historia, su cultura y su gastronomía.
+        </p>
+      </div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/640px-Flag_of_Spain.svg.png"
+        alt="Bandera de España"
+      />
+    </section>
+    
+  </body>
+</html>
